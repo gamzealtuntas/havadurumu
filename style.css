@@ -107,3 +107,38 @@ button:hover {
 #weatherResult img {
   width: 100px;
 }
+.forecast-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.forecast-day {
+  min-width: 220px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  backdrop-filter: blur(6px);
+  flex-shrink: 0;
+}
+
+.forecast-hour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.forecast-hour img {
+  width: 32px;
+  height: 32px;
+}
